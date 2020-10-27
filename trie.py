@@ -15,6 +15,10 @@ class TrieNode:
 
 
 class Trie:
+    """
+    A data structure to efficiently store a list of words. Finds words of length n in O(n).
+    """
+
     def __init__(self, words: list):
         words.sort()  # must be in alphabetical order
         self.root = TrieNode()
